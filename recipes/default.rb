@@ -9,7 +9,7 @@ role = 'role1'
 
 # search for role1 host
 host = search(:node, "roles:#{role} AND chef_environment:#{environment}").sort.first
-puts host
+
 file '/etc/special_config_with_search_data' do
   content host['ipaddress']
 end
