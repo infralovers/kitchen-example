@@ -34,3 +34,13 @@ suites:
     attributes:
     provisioner:
         nodes_path: test/smoke/test-b/nodes
+  - name: test-secret
+    run_list:
+      - recipe[kitchen-example::using_secret]
+    verifier:
+      inspec_tests:
+        - test/smoke/test-using_secret
+    attributes:
+    provisioner:
+      data_bags_path: test/smoke/test-using_secret/data_bags
+      encrypted_data_bag_secret_key_path: test/fixtures/encrypted_data_bag_secret
