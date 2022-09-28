@@ -1,3 +1,7 @@
+# Depricated
+
+Keep this until we decide on doing the next Chef Training ... 
+
 # Collection of Test Kitchen Examples
 
 This repository contains examples for very common usecases for Chefspec as well as Test Kitchen. Examples were created/tested with
